@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* ------------------------FULL BODY---------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ------------------------NAVBAR---------------------- */
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    /* color: #29f700 !important; importent koduthilenkil color change avilla bcs bootstrap lle navbar lle already dark koduthathond */
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #29f700;
+}
+#navbarSupportedContent button{
+    background: #29f700;
+    width: 5rem;
+    border-radius: 10px; 
+}
+
+
+/* ------------------------all section style--------------------- */
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------------------------HOME---------------------- */
+
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(accets/first-background.jpg);
+    background-size: cover; /* imagr full fit ayi cover ayi nikkan */
+    background-position: center;
+    flex-direction: column;  /* h1,p ethokke coloum wise thazhe thazhe veran vendi main id lle kodukka*/
+}
+#home h1{
+    font-size: 70px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    font-size: 18px;
+    color: #fff;
+}
+
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background: #29f700 !important;
+    color: #fff !important;
+}
+
+
+
+
+/* ------------------------ABOUT---------------------- */
+
+#about{
+    background: linear-gradient(to right ,#ea1d6f,#eb466b 100%);
+}
+#about h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+}
+
+
+/* ------------------------SERVICE---------------------- */
+
+#service{
+    background: #e5e5e5;
+}
+#service h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+/* #service img{
+    border: #e5e5e5;
+} */
+
+.card{
+    border-radius: 20px !important;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, .3);
+                inset: 4px 4px 10px white;
+    
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3);
+                inset: -4px -4px 10px white;
+}
+
+
+/* ------------------------CONTACT US---------------------- */
+
+#contact{
+    height: 100%;
+}
+.box{
+    width: 80% !important;
+    height: 500px;
+    
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+#contact h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
